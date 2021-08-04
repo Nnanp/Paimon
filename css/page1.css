@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "a_DomIno";
+    src: url(../src/font/a_DomIno.ttf);
+}
+@font-face {
+    font-family: "Constantia";
+    src: url(../src/font/Constantia.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+h1{
+    color: #344967;
+    font-size: 48px;
+    font-family: "a_DomIno";
+}
+h2{
+    color: #344967;
+    font-size: 30px;
+    font-family: "a_DomIno";
+}
+h3{
+    color: #b6724b;
+    font-size: 24px;
+    font-family: "Constantia";
+}
+
+
+
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    background: url("../src/img/tyu1.jpg");
+    display: flex;
+    align-items: center;
+}
+.content{
+    margin: 0 auto;
+
+    text-align: center;
+}
+.img{
+    width: 500px;
+    height: 759px;
+    background: url("../src/img/paimon1.png") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.img:hover{
+    width: 500px;
+    height: 759px;
+    background: url("../src/img/paimon2.png") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    transition: all 0.2s;
+}

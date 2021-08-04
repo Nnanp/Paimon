@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "a_DomIno";
+    src: url(../src/font/a_DomIno.ttf);
+}
+@font-face {
+    font-family: "Constantia";
+    src: url(../src/font/Constantia.ttf);
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    }
+    ::-webkit-scrollbar-thumb{
+    background: #344967;
+    border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+    background: #b6724b;
+    }
+    ::-webkit-scrollbar-track{
+    background: #344967;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #344967;
+    }
+
+/*_______________Общее_______________*/
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+h1{
+    color: #b6724b;
+    font-size: 48px;
+    font-family: "a_DomIno";
+}
+h1 span{
+    font-size: 72px;
+}
+
+h2{
+    color: #b6724b;
+    font-size: 30px;
+    font-family: "a_DomIno";
+}
+h3{
+    color: #344967;
+    font-size: 24px;
+    font-family: "Constantia";
+}
+
+
+
+/*_______________Стили страниц_______________*/
+body{
+    background: url("../src/img/tyu.jpg");
+}
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+.walk-page{
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.smola-page{
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.store-page{
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*---Стили кликера---*/
+.hil-song{
+    color: #bbbbbb;
+   font-size: 30px;
+   font-family: "a_DomIno";
+   text-align: center;
+   white-space: nowrap;
+   margin: 50px auto;
+   width: 200px;
+}
+.cliker{
+    width: 100%;
+    max-width: 950px;
+    
+    background: #f0f0f0;
+    border-radius: 10px;
+    margin: 60px 0;
+}
+
+/*---Меню---*/
+.menu{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ width: 100%;
+ margin-bottom: 20px;
+}
+a{
+ text-align: center;   
+ text-decoration: none;
+ color:#6fbefe;
+ font-family: "a_DomIno";
+ font-size: 24px;
+ margin: -40px 0 10px;
+}
+a span{
+    font-size: 30px;
+}
+
+.small{
+    width: 66px;
+}
+.big{
+    width: 118px;
+}
+
+/*---Кликер---*/
+.tap-tap{
+    width: 565px;
+    margin: 20px auto 0;
+    background: #dddddd;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.tap-tap h1{
+    color: white;
+    background: #b6724b;
+    border-radius: 10px;
+}
+.tap-tap button{
+    margin: 100px auto;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.tap-tap button:active{
+    transform: scale(0.7,0.7);
+    transition: transform 0.1s;
+}
+.tap-tap button img{
+    width: 160px;
+}
+
+.sheeh{
+    text-align: center;
+    margin: 20px auto 40px;
+    font-family: "a_DomIno";
+    color: #344967;
+}
+
+/*---Магазин---*/
+.store-page h1 {
+    margin-bottom: 40px;
+    text-shadow: 
+		-0   -1px 0   #344967,
+		 0   -1px 0   #344967,
+		-0    1px 0   #344967,
+		 0    1px 0   #344967,
+		-1px -0   0   #344967,
+		 1px -0   0   #344967,
+		-1px  0   0   #344967,
+		 1px  0   0   #344967,
+		-1px -1px 0   #344967,
+		 1px -1px 0   #344967,
+		-1px  1px 0   #344967,
+		 1px  1px 0   #344967,
+		-1px -1px 0   #344967,
+		 1px -1px 0   #344967,
+		-1px  1px 0   #344967,
+		 1px  1px 0   #344967;
+}
+.tovar{
+    width: 100%;
+    max-width: 750px;
+    
+    background: #f0f0f0;
+    border-radius: 10px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.buy{
+    margin: 20px auto;
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    background: #b6724b;
+    border: 1px solid #774e37;
+    border-radius: 10px;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+.buy:hover{
+    background-color: #c58a67;
+    transition: background-color 0.1s;
+}
+.buy:active{
+    transform: scale(0.95,0.95);
+    transition: transform 0.1s;
+}
+.bt{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Constantia";
+}
+.bt img{
+    margin:0 auto;
+}
+.left{
+    background: #774e37;
+    width: 120px;
+    font-size: 48px;
+    color: white;
+}
+.center{
+    color: white;
+    font-size: 24px;
+}
+.right{
+    background: #dddddd;
+    width: 120px;
+    color: #774e37;
+}
+
+.cringe{
+    margin: 30px auto 20px;
+    color:#6fbefe;
+    font-size: 16px;
+}
+
+.last{
+    margin-bottom: 200px;
+}
