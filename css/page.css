@@ -56,6 +56,7 @@ h3{
 /*_______________Стили страниц_______________*/
 body{
     background: url("../src/img/tyu.jpg");
+    touch-action: manipulation;
 }
 .page{
     display: flex;
